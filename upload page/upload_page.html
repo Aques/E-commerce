@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Research Community </title>
+		<link rel ="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="box">
+			<table>
+				<tr>
+					<td id="home">
+						<a href="home.html">HOME</a> 
+					</td>
+					<td>
+						<a href="../login/login.html">LOGOUT</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<form>
+			<div class="box">
+				<label>Author: </label><br><input type="text" required="">
+			</div>
+			<div class="box">
+				<label>Title: </label><br><input type="text" required="">
+			</div>
+			<div class="box">
+				<label>Upload file: </label><br><input type="file" required="" multiple="">
+			</div>
+			<div class="box">
+				<label>Category: </label><br><input list="Category" required="">
+				<datalist id="Category">
+					<option value="Artificial Intelligence">
+					<option value="Art">
+					<option value="Literature">
+					<option value="Machine Learning">
+					<option value="Data Science">
+
+			</div>
+			<div class="box">
+				<label>Abstract: </label><br>
+				<textarea rows="10" cols="150" maxlength="1500"></textarea>
+			</div>
+			<div class="box">
+				<label>Published Year: </label><br><input type="number" required="" min="0" max ="2020" id="year" value="2000">
+				<span class="validity"></span>
+			</div>
+			<div class="box">
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</body>
+</html>
