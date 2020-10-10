@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="box">
+		<h2>Create Account</h2>
+		<div>
+			<label>Username:</label>
+			<input type="text" name="" id="uname" placeholder="Alex1900"> <br><br>
+			<label>Email:</label>
+			<input type="email" name="" id="email" placeholder="alex@abc.com"> <br><br>
+			<label>Password:</label>
+			<input type="password" name="" id="pwd"> <br><br>
+			<button class="mainBtn" onclick="Register()">Create</button>
+		</div>
+		<a href="../login/login.html" class="loglink">Login</a>
+	</div>
+	<script>	
+		function Register() {
+			let uname = document.getElementById("uname");
+			let email = document.getElementById("email");
+			let pwd = document.getElementById("pwd");
+			if (!uname.value || !email.value || !pwd.value) {
+				alert("Please Fill the neccesary details");
+				return;
+			}
+			alert("Succesfully registered");
+			uname.value="";
+			email.value="";
+			pwd.value="";
+		}
+	</script>
+</body>
+</html>
